@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="nl" data-bs-theme="dark">
+    <head>
+        <!-- Algemene Meta-tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Masyntrix | Webapps, Websites & IoT - Professionele en innovatieve maatwerk softwareoplossingen.">
+        <meta name="author" content="Masyntrix">
+        <title>Masyntrix | Webapps, Websites & IoT</title>
+
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+        <!--Open Graph Socials-->
+        <meta property="og:title" content="Masyntrix | Webapps, Websites & IoT">
+        <meta property="og:description" content="Ontdek de modernste tech-oplossingen op het gebied van maatwerk webapplicaties, conversiegerichte websites en IoT-integraties op masyntrix.com.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://masyntrix.com">
+        <meta property="og:image" content="https://masyntrix.comassets/img/og-preview.png"> <!-- Verwijs hier later naar je logo preview -->
+
+        <!-- Canonical Link (Goed voor Google SEO) -->
+        <link rel="canonical" href="https://masyntrix.com">
+
+        <!--CSS overschrijft Bootstrap-->
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                font-family: "JetBrains Mono", monospace;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            :root, [data-bs-theme="dark"] {
+                --bs-body-bg: #030814;          /* Diep donkerblauw/zwart (achtergrondkleur logo) */
+                --bs-body-color: #f0f4f8;       /* Helder, zacht wit/grijs voor tekst */
+                --bs-primary: #00d2ff;          /* Fel neonblauw (linkerkant logo) */
+                --bs-secondary: #bd00ff;        /* Fel neonpaars/magenta (rechterkant logo) */
+                --bs-dark: #01040a;             /* Extra donker accent voor kaarten/secties */
+                --bs-info: #00f5d4;             /* Neon cyaan voor extra accenten of badges */
+                --bs-link-color: #00d2ff;       /* Neonblauw voor links */
+            }
+
+            /* 1. Kleurverloop (Gradient) zoals in de tekst en het logo */
+            .bg-masyntrix-gradient {
+                background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%) !important;
+            }
+
+            .text-masyntrix-gradient {
+                background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: inline-block;
+            }
+
+            /* 2. Neon Glow Effecten */
+            .glow-blue {
+                box-shadow: 0 0 15px rgba(0, 210, 255, 0.5), 0 0 5px rgba(0, 210, 255, 0.3);
+                border: 1px solid var(--bs-primary);
+            }
+
+            .glow-purple {
+                box-shadow: 0 0 15px rgba(189, 0, 255, 0.5), 0 0 5px rgba(189, 0, 255, 0.3);
+                border: 1px solid var(--bs-secondary);
+            }
+
+            /* 3. Moderne Masyntrix Knoppen */
+            .btn-masyntrix {
+                background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
+                color: #030814 !important; /* Donkere tekst op felle achtergrond voor leesbaarheid */
+                font-weight: 600;
+                border: none;
+                transition: all 0.3s ease;
+            }
+
+            .btn-masyntrix:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 0 20px rgba(0, 210, 255, 0.6), 0 0 30px rgba(189, 0, 255, 0.4);
+            }
+
+            .border-tech {
+                border: 1px solid transparent;
+                border-image: linear-gradient(135deg, var(--bs-primary), var(--bs-secondary)) 1;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+<!--CONTAINER BODY-->
+        <div class="container-fluid d-flex flex-column min-vh-100 p-0">
+            <!--App-shell container-fluid=100% vullend d-flex=flexbox flex-column=verticaal bij min viewport-height-100% vullend padding=0-->
+        
+            <!-- NAVIGATIEBALK (vult de breedte binnen de container) -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-tech px-3" aria-label="Hoofdmenu">
+            <!--navbar=styling expand=100% op pc dark=kleur sticky=blijft bovenaan px=padding horizontaal aria=screenreader-->
+                <a class="navbar-brand fw-bold text-masyntrix-gradient" href="#home">Masyntrix</a>
+                <!--brand=styling logo fw-bold=fontweight vet text=CSS overschrijft Bootstrap href=knoptekst met link naar start-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu"
+                aria-expanded="false" aria-label="Navigatiemenu uitklapbaar">
+                <!--toggler=schakelaar type knop toggle=openklapbaar target=koppeling ID daadwerkelijke menulinks false=dicht true=open-->
+                    <span class="navbar-toggler-icon"></span> <!--hamburgericoon-->
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <!--collapse=uitklapbaar menu id=koppeling met knop via target-->
+                    <!--MENULIST-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--nav=styling margin-end-auto=links uitgelijnd margin-bottom-mobiel=2 margin-bottom-pc=0-->
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hoe-het-werkt">Hoe het werkt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projecten">Projecten</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#over-masyntrix">Over Masyntrix</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+
+                    <div class="d-flex"><!--flexbox=horizontaal rechts uitgelijnd btn=styling CSS overschrijft Bootstrap-->
+                        <a href="#contact" class="btn btn-masyntrix btn-sm">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!--HERO-section / HEADER-->
+            <header class="bg-dark min-vh-50 d-flex align-items-center border-bottom border-tech">
+            <!--dark=kleur min-vh-50=min viewport-height 50% d-flexbox align-items-center=verticaal centreren border=rand-->          
+                <div class="container px-5">
+                <!--nested grid container voor header met daarbinnen row-cols-->
+                    <div class="row gx-5 justify-content-center"> <!--rij met horizontale gutter van 5 en inhoud gecentreerd -->
+                        <div class="col-lg-8"> <!--op pc 8/12 breed-->
+                            <div class="text-center my-5"> <!--tekst gecentreerd en verticale marge van niveau 5-->
+<!--PAGINA-TITEL-->             <h1 class="display-5 fw-bolder text-masyntrix-gradient mb-3"> <!--grote vette tekst met kleuroverloop en benedenmarge van niveau 3-->
+                                [ Masyntrix ]</h1>
+                                <!-- Subtekst -->
+                                <p class="lead text-muted mb-4">Webapps, Websites & IoT</p> <!--extra nadruk op tekst en benedenmarge van niveau 4-->
+<!--Knop DEMO-->                <div class="d-flex justify-content-center"> <!--flexbox op demoknop om op mobiel voor plaatsing in het midden-->
+                                <a href="#demo" class="btn btn-masyntrix">Bekijk de Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        
+<!--MAIN hoofdinhoud SPA-->
+            <main class="py-5 bg-dark">
+            <!--py-5=verticale padding niveau 5 dark=kleur-->    
+                <div class="container mb-5 text-center text-lg-start">
+                <!--nested grid container voor main met daarbinnen row-cols-->
+                    <div class="p-4 rounded border-tech" style="background-color: var(--bs-body-bg);">
+                    <!--p-4=padding niveau 4 rounded=afgeronde hoeken border-tech=rand-->
+                        <h2 class="h4 fw-bold text-primary mb-3">Welkom bij Masyntrix.com</h2>            
+                        <!--h4=Bootstrap stylinggrootte fw-bold=vet text-primary=kleur-->
+                        <p class="mb-0 text-body" style="opacity: 0.90;">
+                        <!--mb-0=geen benedenmarge text-body=kleur-->  
+                        Masyntrix ontwikkelt Webapps, Websites & IoT-oplossingen op maat.
+                        </p>
+                    </div>
+                </div>
+            
+            
+            
+            
+            
+            
+            </main>
